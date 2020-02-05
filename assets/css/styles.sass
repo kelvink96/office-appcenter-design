@@ -1,0 +1,90 @@
+@import "variables"
+
+.no-display
+  display: none
+
+body
+  background: $lite-grey
+
+  nav
+    background-color: $hot-pink
+
+    .brand-logo
+      text-transform: capitalize
+
+      i
+        font-size: 1.5em
+        margin-top: .05em
+
+  .wrapper
+    .all-apps-wrapper
+      padding: 3em 0
+
+      .row
+        .card-holder
+          height: 100px
+          margin-bottom: 1.25em
+
+          .card
+            height: 100px
+            background: transparent
+            box-shadow: none
+            padding: 1em
+
+            p, a
+              margin: 0
+              color: $dark-blue
+
+            .app-icon-wrapper
+              img
+                height: 60px
+                width: 60px
+
+            .app-text-wrapper
+              padding: .5em .25em
+
+              .app-title
+                font-size: 1.25em
+                text-transform: capitalize
+                font-weight: 500
+
+                .la-external-link-alt
+                  margin-left: .25em
+
+                .la-info-circle
+                  float: right
+                  color: $hot-pink
+
+                &:hover,
+                &:focus
+                  color: $hot-pink
+                  text-decoration: underline
+
+              .app-desc
+                white-space: nowrap
+                width: 95%
+                overflow: hidden
+                text-overflow: ellipsis
+                padding-top: .5em
+
+            &:hover,
+            &:focus
+              height: auto
+              z-index: 2
+              background: white
+              -webkit-box-shadow: 0px 0px 10px 6px rgba(185, 185, 185, .7)
+              -moz-box-shadow: 0px 0px 10px 3px rgba(185, 185, 185, .7)
+              box-shadow: 0px 0px 10px 6px rgba(185, 185, 185, .7)
+              transition: none
+
+              .app-text-wrapper
+                .app-title
+                  .no-display
+                    display: inline-block
+
+                .app-desc
+                  white-space: normal
+                  width: 100%
+                  overflow: auto
+                  text-overflow: inherit
+
